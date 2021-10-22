@@ -1,24 +1,23 @@
 let btnHamburger = document.querySelector(".hamburger-menu");
 let barre = document.querySelector(".fa-bars");
-let crossClose = document.querySelector(".fa-times");
-btnHamburger.className = btnHamburger.classList + " active ";
+let crossClose = document.querySelector(".fa-times"); 
 
-barre = document.addEventListener("click",
+barre.addEventListener("click",
 
     function() {
-        btnHamburger.style.display = "block";
+        btnHamburger.classList.add("active");
     }
 
 ); 
 
 
-// crossClose = document.addEventListener("click",
+crossClose.addEventListener("click",
 
-//     function() {
-//         btnHamburger.style.display = "none";
-//     }
+    function() {
+        btnHamburger.classList.remove("active");
+    }
 
-// ); 
+); 
 
 console.log(btnHamburger, barre, crossClose);
 
